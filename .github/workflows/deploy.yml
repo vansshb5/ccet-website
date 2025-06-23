@@ -36,7 +36,7 @@ jobs:
             - name: Set VITE_BASE for production
               if: github.ref == 'refs/heads/main'
               run: |
-                  echo "VITE_BASE=/" >> $GITHUB_ENV
+                  echo "VITE_BASE=/ccet-website/" >> $GITHUB_ENV
 
             - name: Build
               run: |
@@ -65,4 +65,4 @@ jobs:
                 issue-number: ${{ github.event.pull_request.number }}
                 body: |
                     🚀 Preview for this PR is deployed and available at:  
-                    https://CCET-College-Website.github.io/ccet-website/pr-${{ github.event.pull_request.number }}/
+                    https://ccet-college-website.github.io/ccet-website/pr-${{ github.event.pull_request.number }}/
