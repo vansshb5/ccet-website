@@ -174,10 +174,10 @@ const Header = () => {
           <div className="w-full px-4 py-3 flex items-center justify-between">
             <img src={CCETLogo} alt="CCET Logo" className="h-10 w-auto" />
             <div className="flex-1 text-center px-2">
-              <h1 className="text-white text-sm font-serif leading-tight">
+              <h1 className="text-white text-2xl font-serif leading-tight">
                 Chandigarh College of Engineering and Technology
               </h1>
-              <p className="text-[10px] text-gray-300 font-serif leading-none mt-1">(PU | Chandigarh)</p>
+              <p className="text-[20px] text-gray-300 font-serif leading-none mt-1">(PU | Chandigarh)</p>
             </div>
             <img src={IndianEmblem} alt="Indian Emblem" className="h-10 w-auto" />
           </div>
