@@ -31,7 +31,7 @@ jobs:
             - name: Set VITE_BASE for PR previews
               if: github.event_name == 'pull_request'
               run: |
-                  echo "VITE_BASE=/pr-${{ github.event.pull_request.number }}/" >> $GITHUB_ENV
+                  echo "VITE_BASE=/ccet-website/pr-${{ github.event.pull_request.number }}/" >> $GITHUB_ENV
 
             - name: Set VITE_BASE for production
               if: github.ref == 'refs/heads/main'
