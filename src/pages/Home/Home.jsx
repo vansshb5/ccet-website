@@ -5,7 +5,6 @@ import Contact from './ContactUs'
 import OurAlumni from './OurAlumni'
 import Gallery from './Gallery'
 import EventCalendar from './EventCalendar'
-import bannerImg from '../../assets/home/banner.png' // <-- Add this line
 
 function Home() {
   return (
@@ -21,7 +20,7 @@ function Home() {
             }
           `}
         </style>
-        <img className="home-banner" src={bannerImg} alt="Banner" /> {/* <-- Use imported image */}
+        <img className="home-banner" src="/assets/home/banner.png" alt="Banner" />
       </div>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
         <LatestEvents />
