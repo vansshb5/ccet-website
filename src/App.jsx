@@ -8,7 +8,7 @@ import './index.css';
 import NoPage from './pages/Nopage/NoPage.jsx';
 import AntiRagging from "./pages/Students-Section/Student-Welfare/Anti-Ragging/AntiRagging.jsx";
 import AntiRaggingCommittee from './pages/Students-Section/Student-Welfare/Anti-Ragging-Committee/AntiRaggingCommittee';
-
+import Academicheads from './pages/AcadmicHeads/Academicheads.jsx';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="*" element={<NoPage/>} />
         <Route path="/anti-ragging" element={<AntiRagging />} />
         <Route path="/anti-ragging-committee" element={<AntiRaggingCommittee />} />
-
+        <Route path="/about/academic-heads" element={<Academicheads />} />   
         {/* Add more routes here */}
       </Routes>
       <Footer />
