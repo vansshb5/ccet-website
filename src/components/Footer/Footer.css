@@ -108,10 +108,9 @@
 /* Split column layout */
 .footer-card-wrapper.split-columns .footer-links-container {
   display: grid;
-  grid-template-columns: repeat(2, 160px);
-  column-gap: 20px;
-  row-gap: 12px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  justify-items: center;
 }
 
 /* ========== Individual Link ========== */
@@ -235,6 +234,12 @@
     gap: 20px;
   }
 
+    .footer-link {
+    width: 100%;
+    font-size: 16px;
+  }
+
+
   .footer-card-wrapper {
     width: 90%;
     padding: 30px 10px 20px;
@@ -253,13 +258,14 @@
     flex-direction: column;
   }
 
-  .mobile-card.open.split-columns .footer-links-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 12px;
-    column-gap: 24px;
-    justify-items: stretch;
-  }
+ .mobile-card.open.split-columns .footer-links-container {
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  justify-items: center;
+
+}
+
 
   .footer-heading {
     font-size: 20px;
@@ -267,12 +273,11 @@
     width: calc(100% - 10px);
     padding: 8px 0;
   }
-
   .footer-link {
-    font-size: 18px;
-    width: 100%;
-    margin-right: 0;
-  }
+   width: 100%;
+  max-width: 160px;
+}
+
 
   .footer-bottom {
     font-size: 16px;
