@@ -82,7 +82,6 @@
   box-sizing: border-box;
 }
 
-/* Mobile dropdown icon */
 .footer-heading::after {
   content: ' ▼';
   font-size: 18px;
@@ -105,7 +104,6 @@
   box-sizing: border-box;
 }
 
-/* Split column layout */
 .footer-card-wrapper.split-columns .footer-links-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -172,7 +170,6 @@
   box-sizing: border-box;
 }
 
-/* Nav Links */
 .footer-nav-links {
   margin-top: 5px;
   font-size: 22px;
@@ -227,26 +224,42 @@
   }
 }
 
+/* MOBILE FIX FOR QUICK LINKS */
 @media (max-width: 600px) {
   .footer-columns {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
   }
 
-    .footer-link {
+  .footer-link {
     width: 100%;
     font-size: 16px;
   }
 
-
   .footer-card-wrapper {
-    width: 90%;
-    padding: 30px 10px 20px;
+    width: 90% !important;
+    padding: 40px 16px 20px !important;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-sizing: border-box;
   }
 
-  .footer-links-container {
-    margin-top: 10px;
+  .footer-heading {
+    position: relative !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 20px !important;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+  }
+
+  .footer-heading::after {
+    float: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
   }
 
   .mobile-card .footer-links-container {
@@ -258,33 +271,32 @@
     flex-direction: column;
   }
 
- .mobile-card.open.split-columns .footer-links-container {
-   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 12px;
-  justify-items: center;
-
-}
-
-
-  .footer-heading {
-    font-size: 20px;
-    left: 5px;
-    width: calc(100% - 10px);
-    padding: 8px 0;
+  .mobile-card.open.split-columns .footer-links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    justify-items: center;
   }
-  .footer-link {
-   width: 100%;
-  max-width: 160px;
-}
-
 
   .footer-bottom {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 14px;
+    padding: 12px;
   }
 
   .footer-nav-links {
-    font-size: 16px;
+    font-size: 14px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .footer-card-wrapper {
+    width: 95% !important;
+    margin-bottom: 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .footer-columns .footer-card-wrapper:nth-child(2) {
+    width: 95% !important;
   }
 }
