@@ -22,7 +22,22 @@ The CCET prospectus presents a comprehensive overview of our institution, highli
       </p>
 
       {/* Current Year Prospectus */}
-
+      <h2>Prospectus 2025-26</h2>
+      <div className="prospectus-viewer">
+        <iframe
+          src={currentProspectusURL}
+          title="Prospectus 2025-26"
+          width="100%"
+          height="100%"
+        ></iframe>
+      </div>
+      <a
+        href={currentProspectusURL}
+        download
+        className="download-button"
+      >
+        Download PDF
+      </a>
 
       {/* Previous Years Prospectus */}
 
