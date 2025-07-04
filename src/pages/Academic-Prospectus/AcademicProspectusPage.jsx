@@ -40,7 +40,15 @@ The CCET prospectus presents a comprehensive overview of our institution, highli
       </a>
 
       {/* Previous Years Prospectus */}
-
+      <h2 style={{ marginTop: "2rem" }}>Previous Year Prospectuses</h2>
+      <div className="previous-prospectus-list">
+        {previousProspectuses.map(({ year, url }) => (
+          <div key={year} className="prospectus-item">
+            <span>Prospectus {year}</span>
+            <a href={url} download>Download</a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
