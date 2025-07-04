@@ -21,7 +21,8 @@ function App() {
         <Route path="/anti-ragging" element={<AntiRagging />} />
         <Route path="/anti-ragging-committee" element={<AntiRaggingCommittee />} />
         <Route path="/about/academic-heads" element={<Academicheads />} /> 
-           <Route path="/students-section/courses" element={<Courses />} />
+        <Route path="/students-section/courses" element={<Courses />} />
+        <Route path="/prospectus" element={<AcademicProspectusPage />} />
         {/* Add more routes here */}
       </Routes>
       <Footer />
