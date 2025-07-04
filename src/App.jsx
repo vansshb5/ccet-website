@@ -10,6 +10,7 @@ import AntiRagging from "./pages/Students-Section/Student-Welfare/Anti-Ragging/A
 import AntiRaggingCommittee from './pages/Students-Section/Student-Welfare/Anti-Ragging-Committee/AntiRaggingCommittee';
 import Academicheads from './pages/AcadmicHeads/Academicheads.jsx';
 import Courses from './pages/Courses/Courses.jsx';
+import AcademicProspectusPage from './pages/Academic-Prospectus/AcademicProspectusPage.jsx';
 function App() {
   return (
     <HashRouter>
