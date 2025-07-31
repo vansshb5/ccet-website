@@ -10,6 +10,7 @@ import AntiRagging from "./pages/Students-Section/Student-Welfare/Anti-Ragging/A
 import AntiRaggingCommittee from './pages/Students-Section/Student-Welfare/Anti-Ragging-Committee/AntiRaggingCommittee';
 import Academicheads from './pages/AcadmicHeads/Academicheads.jsx';
 import Courses from './pages/Courses/Courses.jsx';
+import Principal from './pages/Principal/Principal.jsx';
 import AcademicProspectusPage from './pages/Academic-Prospectus/AcademicProspectusPage.jsx';
 import ContactUs from './pages/ContactUs/ContactUs.jsx';
 import NIRF from "./pages/NIRF/nirf.jsx";
@@ -24,6 +25,8 @@ function App() {
         <Route path="/anti-ragging" element={<AntiRagging />} />
         <Route path="/anti-ragging-committee" element={<AntiRaggingCommittee />} />
         <Route path="/about/academic-heads" element={<Academicheads />} /> 
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/about/principal" element={<Principal />}/>
         <Route path="/students-section/courses" element={<Courses />} />
         <Route path="/prospectus" element={<AcademicProspectusPage />} />
         <Route path="/contact" element={<ContactUs />} />
