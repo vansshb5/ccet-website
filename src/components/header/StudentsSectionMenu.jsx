@@ -16,7 +16,10 @@ const StudentsSectionMenu = () => {
     {
       title: 'Student Grievances Redressal System',
       links: [
-        { name: 'Grievance Redressal Portal', url: '/grievance-portal' },
+        {
+          name: 'Grievance Redressal Portal',
+          url: 'https://www.ccet.ac.in/grievances/login.php'
+        },
       ],
     },
     {
@@ -26,7 +29,10 @@ const StudentsSectionMenu = () => {
         { name: 'Student Council', url: '/student-council' },
         { name: 'Anti Ragging', url: '/anti-ragging' },
         { name: 'Anti Ragging Committee', url: '/anti-ragging-committee' },
-        { name: 'Student Fee Payment (HDFC)', url: '/student-fee-payment' },
+        {
+          name: 'Student Fee Payment (HDFC)',
+          url: 'https://paydirect.eduqfix.com/app/3qTjKfysWsfqEyNTM4giVFX4VGVYGZss5NYRHpY65DaJgmu14S3Ff6NKoVa3l2Ay/6593'
+        },
         { name: 'Application form to be a New Voter', url: '/new-voter' },
       ],
     },
@@ -66,16 +72,18 @@ const StudentsSectionMenu = () => {
           </div>
           <ul className="space-y-2">
             {section.links.map((link, idx) => (
-              <li
-                key={idx}
-                className="hover:bg-[#FB923C] hover:text-white cursor-pointer transition-colors duration-200 px-2 py-1 rounded"
-              >
-                {link.url ? (
-                  <Link to={link.url}>{link.name}</Link>
-                ) : (
-                  link.name
-                )}
-              </li>
+                <li
+                    key={idx}
+                    className="hover:bg-[#FB923C] hover:text-white cursor-pointer transition-colors duration-200 px-2 py-1 rounded"
+                >
+                  {link.url.startsWith("http") ? (
+                      <a href={link.url} target="_blank" rel="noopener noreferrer">
+                        {link.name}
+                      </a>
+                  ) : (
+                      <Link to={link.url}>{link.name}</Link>
+                  )}
+                </li>
             ))}
           </ul>
         </div>
