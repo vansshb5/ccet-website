@@ -20,7 +20,7 @@ const AcademicsMenu = () => {
         "Students Feedback",
         "Examination",
         { name: "E-Akademik", path: "https://eakadamik.in/ccet/" },
-        "E-Cell",
+        {name: "E-Cell", path: "/ecell"},
         "NIRF",
         { name: "FAQs", path: "/faq" },
         { name: "NIRF", path: "/academics/nirf" },

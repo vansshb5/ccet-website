@@ -16,7 +16,11 @@ import Principal from "./pages/Principal/Principal.jsx";
 import AcademicProspectusPage from "./pages/Academic-Prospectus/AcademicProspectusPage.jsx";
 import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import NIRF from "./pages/NIRF/nirf.jsx";
+
+import ECell from './pages/ECell/ECell.jsx';
 import AdmissionNotices from "./pages/AdmissionNotices/AdmissionNotices.jsx";
+
+
 function App() {
   return (
     <HashRouter>
@@ -39,6 +43,8 @@ function App() {
         <Route path="/prospectus" element={<AcademicProspectusPage />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/academics/nirf" element={<NIRF />} />
+
+        <Route path='/ecell' element={<ECell />} />
         <Route path="/admissions/notices" element={<AdmissionNotices />} />
         {/* Add more routes here */}
       </Routes>

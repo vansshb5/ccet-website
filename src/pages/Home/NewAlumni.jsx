@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import alumniInfo from "../../assets/home/Alumni/alumniInfo";
-import backgroundImg from "../../assets/home/Events/event-bg.jpg";
+
 import "./NewAlumni.css";
 
 const NewAlumni = () => {
