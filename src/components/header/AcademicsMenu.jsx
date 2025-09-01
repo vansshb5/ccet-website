@@ -18,7 +18,7 @@ const AcademicsMenu = () => {
       links: [
         "Convocation 2023",
         "Students Feedback",
-        "Examination",
+        {name: "Examination", path: "/examinations"},
         { name: "E-Akademik", path: "https://eakadamik.in/ccet/" },
         {name: "E-Cell", path: "/ecell"},
         "NIRF",
