@@ -87,7 +87,8 @@ function App() {
 				<Route path="/programmes/phd" element={<Doctorate />} />
 				<Route path="/programmes/degree" element={<Degree />} />
 				<Route path="/notices/tenders" element={<Tenders />} />
-                <Route path="/about/history" element={<History />} />
+        <Route path="/about/history" element={<History />} />
+
 
               {/* Add more routes here */}
 			</Routes>

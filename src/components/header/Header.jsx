@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import CCETLogo from "../../assets/header/CCET-Logo.png";
@@ -409,7 +410,6 @@ const Header = () => {
 			toggleSubmenu(menuItem.label);
 		}
 	};
-
 	return (
 		<div className="w-full bg-white md:bg-gradient-to-r md:from-blue-900 md:to-slate-900 relative z-50">
 			{/* Mobile View */}
@@ -457,6 +457,7 @@ const Header = () => {
 					</button>
 				</div>
 			</div>
+
 
 			<div className="hidden lg:flex flex-col items-center px-2 py-3 w-full max-w-[1436px] mx-auto">
 				<div className="flex w-full items-center justify-center gap-2">
