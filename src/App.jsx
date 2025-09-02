@@ -23,6 +23,7 @@ import ECell from "./pages/ECell/ECell.jsx";
 
 import SportsFacility from "./pages/Sports/SportsFacility.jsx";
 import FitIndiaPage from "./pages/Students-Section/Academics/FitIndia/FitIndiaPage.jsx";
+import Leet from "./pages/Degree-PU-LEET/Degree-pu-leet.jsx";
 import Doctorate from "./pages/Doctorate/PhdProgrammes.jsx";
 import Degree from "./pages/Degree/Degree.jsx";
 
@@ -55,6 +56,7 @@ function App() {
         <Route path="/examinations" element={<Examinations />} />
         <Route path="/sports-facility" element={<SportsFacility />} />
         <Route path="/fit-india" element={<FitIndiaPage />} />
+        <Route path="/programmes/pu-leet" element={<Leet />} />
         <Route path="/programmes/phd" element={<Doctorate />} />
         <Route path="/programmes/degree" element={<Degree />} />
         {/* Add more routes here */}
