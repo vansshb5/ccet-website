@@ -40,7 +40,9 @@ const AboutUsMenu = () => {
         "Canteen",
         "Infrastructure",
         "Policy on use of IT Resources",
-        "Sports Facility",
+        <Link to="/sports-facility" className="block w-full">
+          Sports Facility
+        </Link>,
       ],
     },
   ];

@@ -20,7 +20,9 @@ import ECell from './pages/ECell/ECell.jsx';
 import Examinations from './pages/Examinations/Examinations.jsx';
 
 import ECell from './pages/ECell/ECell.jsx';
+import Examinations from './pages/Examinations/Examinations.jsx';
 import AdmissionNotices from "./pages/AdmissionNotices/AdmissionNotices.jsx";
+import SportsFacility from './pages/Sports/SportsFacility.jsx';
 
 
 function App() {
@@ -49,7 +51,8 @@ function App() {
         <Route path='/examinations' element={<Examinations />} />
 
         <Route path='/ecell' element={<ECell />} />
-        <Route path="/admissions/notices" element={<AdmissionNotices />} />
+        <Route path='/examinations' element={<Examinations />} />
+        <Route path='/sports-facility' element={<SportsFacility />} />
         {/* Add more routes here */}
       </Routes>
       <Footer />
