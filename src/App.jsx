@@ -8,6 +8,7 @@ import "./index.css";
 import NoPage from "./pages/Nopage/NoPage.jsx";
 import FAQ from "./pages/FAQ/faq";
 import VisionMission from "./pages/vision-mission/vision-mission.jsx";
+import Infrastructure from "./pages/infrastructure/infrastructure.jsx";
 import Convocation from "./pages/Convocation/Convocation.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -34,7 +35,7 @@ import History from "./pages/History/History.jsx";
 function App() {
 	return (
 		<HashRouter>
-			<Header />
+			<div className="navigation-bar"><Header /></div>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="*" element={<NoPage />} />
@@ -54,6 +55,7 @@ function App() {
 				<Route path="/courses" element={<Courses />} />
 
 				<Route path="/about/principal" element={<Principal />} />
+				<Route path="/infrastructure" element={<Infrastructure />} />
 
 				<Route path="/vision-mission" element={<VisionMission />} />
 				<Route path="/Convocation" element={<Convocation />} />
@@ -87,7 +89,8 @@ function App() {
 				<Route path="/programmes/phd" element={<Doctorate />} />
 				<Route path="/programmes/degree" element={<Degree />} />
 				<Route path="/notices/tenders" element={<Tenders />} />
-                <Route path="/about/history" element={<History />} />
+        <Route path="/about/history" element={<History />} />
+
 
               {/* Add more routes here */}
 			</Routes>

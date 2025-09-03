@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import CCETLogo from "../../assets/header/CCET-Logo.png";
+import CCETLogo from "../../assets/header/ccetLogo.png";
 import IndianEmblem from "../../assets/header/Indian-Emblem.png";
 
 // For Desktops
@@ -77,11 +78,8 @@ const Header = () => {
 						{ name: "Library", path: "/life/library" },
 						{ name: "Class Rooms", path: "/life/classrooms" },
 						{ name: "Canteen", path: "/life/canteen" },
-						{
-							name: "Infrastructure",
-							path: "/life/infrastructure",
-						},
-						{
+						{ name: "Infrastructure", path: "/infrastructure" }
+						, {
 							name: "Policy on use of IT Resources",
 							path: "/life/it-policy",
 						},
@@ -409,29 +407,28 @@ const Header = () => {
 			toggleSubmenu(menuItem.label);
 		}
 	};
-
 	return (
 		<div className="w-full bg-white md:bg-gradient-to-r md:from-blue-900 md:to-slate-900 relative z-50">
 			{/* Mobile View */}
 			<div className="lg:hidden w-full bg-gradient-to-r from-blue-900 to-slate-900 shadow">
-				<div className="w-full px-4 py-3 flex items-center justify-between">
+				<div className="w-full px-2 py-3 flex items-center justify-between">
 					<img
 						src={CCETLogo}
 						alt="CCET Logo"
-						className="h-10 w-auto"
+						className="h-16 w-auto"
 					/>
 					<div className="flex-1 text-center px-2">
-						<h1 className="text-white text-2xl font-serif leading-tight">
+						<h1 className="text-white text-[16px] font-serif leading-snug">
 							Chandigarh College of Engineering and Technology
 						</h1>
-						<p className="text-[20px] text-gray-300 font-serif leading-none mt-1">
+						<p className="text-[14px] text-gray-300 font-serif leading-none mt-1">
 							(PU | Chandigarh)
 						</p>
 					</div>
 					<img
 						src={IndianEmblem}
 						alt="Indian Emblem"
-						className="h-10 w-auto"
+						className="h-16 w-auto"
 					/>
 				</div>
 
@@ -458,11 +455,12 @@ const Header = () => {
 				</div>
 			</div>
 
+
 			<div className="hidden lg:flex flex-col items-center px-2 py-3 w-full max-w-[1436px] mx-auto">
 				<div className="flex w-full items-center justify-center gap-2">
 					<div className="flex items-center h-full mx-14 min-w-[96px]">
 						<img
-							className="h-24 w-auto object-contain"
+							className="h-36 w-auto object-contain"
 							src={CCETLogo}
 							alt="College Logo"
 						/>
@@ -482,7 +480,7 @@ const Header = () => {
 					</div>
 					<div className="flex items-center h-full mx-14 min-w-[96px]">
 						<img
-							className="h-24 w-auto object-contain"
+							className="h-34 w-auto object-contain"
 							src={IndianEmblem}
 							alt="Indian Emblem"
 						/>
@@ -501,11 +499,10 @@ const Header = () => {
 						>
 							<div
 								className={`cursor-pointer px-3 py-1 rounded-md font-serif text-xl whitespace-nowrap transition-all duration-200
-                  ${
-						activeNav === label
-							? "bg-yellow-400 text-red-700 shadow-md"
-							: "text-white hover:bg-yellow-400 hover:text-red-700 hover:shadow-md"
-					}`}
+                  ${activeNav === label
+										? "bg-yellow-400 text-red-700 shadow-md"
+										: "text-white hover:bg-yellow-400 hover:text-red-700 hover:shadow-md"
+									}`}
 								onClick={() => {
 									if (path) {
 										if (path.includes("http")) {
@@ -564,11 +561,10 @@ const Header = () => {
 							>
 								<div
 									className={`px-4 py-3 cursor-pointer transition-all duration-200 font-medium flex justify-between items-center
-                    ${
-						activeNav === menuItem.label
-							? "bg-yellow-400 text-red-700"
-							: "text-gray-800 hover:bg-gray-100"
-					}`}
+                    ${activeNav === menuItem.label
+											? "bg-yellow-400 text-red-700"
+											: "text-gray-800 hover:bg-gray-100"
+										}`}
 									onClick={() => {
 										handleMainMenuClick(menuItem);
 									}}
@@ -576,11 +572,10 @@ const Header = () => {
 									<span>{menuItem.label}</span>
 									{menuItem.sections && (
 										<svg
-											className={`w-5 h-5 transition-transform duration-200 ${
-												expandedMenu === menuItem.label
+											className={`w-5 h-5 transition-transform duration-200 ${expandedMenu === menuItem.label
 													? "transform rotate-180"
 													: ""
-											}`}
+												}`}
 											fill="none"
 											stroke="currentColor"
 											viewBox="0 0 24 24"
