@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import CCETLogo from "../../assets/header/CCET-Logo.png";
+import CCETLogo from "../../assets/header/ccetLogo.png";
 import IndianEmblem from "../../assets/header/Indian-Emblem.png";
 
 // For Desktops
@@ -411,24 +411,24 @@ const Header = () => {
 		<div className="w-full bg-white md:bg-gradient-to-r md:from-blue-900 md:to-slate-900 relative z-50">
 			{/* Mobile View */}
 			<div className="lg:hidden w-full bg-gradient-to-r from-blue-900 to-slate-900 shadow">
-				<div className="w-full px-4 py-3 flex items-center justify-between">
+				<div className="w-full px-2 py-3 flex items-center justify-between">
 					<img
 						src={CCETLogo}
 						alt="CCET Logo"
-						className="h-10 w-auto"
+						className="h-16 w-auto"
 					/>
 					<div className="flex-1 text-center px-2">
-						<h1 className="text-white text-2xl font-serif leading-tight">
+						<h1 className="text-white text-[16px] font-serif leading-snug">
 							Chandigarh College of Engineering and Technology
 						</h1>
-						<p className="text-[20px] text-gray-300 font-serif leading-none mt-1">
+						<p className="text-[14px] text-gray-300 font-serif leading-none mt-1">
 							(PU | Chandigarh)
 						</p>
 					</div>
 					<img
 						src={IndianEmblem}
 						alt="Indian Emblem"
-						className="h-10 w-auto"
+						className="h-16 w-auto"
 					/>
 				</div>
 
@@ -460,7 +460,7 @@ const Header = () => {
 				<div className="flex w-full items-center justify-center gap-2">
 					<div className="flex items-center h-full mx-14 min-w-[96px]">
 						<img
-							className="h-24 w-auto object-contain"
+							className="h-36 w-auto object-contain"
 							src={CCETLogo}
 							alt="College Logo"
 						/>
@@ -480,7 +480,7 @@ const Header = () => {
 					</div>
 					<div className="flex items-center h-full mx-14 min-w-[96px]">
 						<img
-							className="h-24 w-auto object-contain"
+							className="h-34 w-auto object-contain"
 							src={IndianEmblem}
 							alt="Indian Emblem"
 						/>
