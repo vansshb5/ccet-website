@@ -41,7 +41,9 @@ const AboutUsMenu = () => {
         "Class Rooms",
         "Canteen",
         "Infrastructure",
-        "Policy on use of IT Resources",
+        <Link to="https://ccet.ac.in/pdf/notices/general/Policy_on_use_of_IT%20_esources_of_Government_of_India_0%20(1).pdf" className="block w-full">
+          Policy on use of IT Resources
+        </Link>,
         <Link to="/sports-facility" className="block w-full">
           Sports Facility
         </Link>,
