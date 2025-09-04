@@ -118,8 +118,8 @@ const Header = () => {
 					title: "Academics",
 					links: [
 						{
-							name: "Convocation 2023",
-							path: "/academics/convocation-2023",
+							name: "Convocation",
+							path: "/Convocation",
 						},
 						{
 							name: "Students Feedback",
