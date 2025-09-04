@@ -17,7 +17,7 @@ const AcademicsMenu = () => {
         {
             title: 'Academics',
             links: [
-                'Convocation 2023', 
+                 { name: 'Convocation', path: '/Convocation'},
                 'Students Feedback', 
                 'Examination', 
                 'E-Akademik', 
